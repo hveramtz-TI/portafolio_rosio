@@ -6,7 +6,9 @@ import Bienvenida from './components/bienvenida/bienvenida';
 function App() {
   return (
     <div className="App">
+      <Header />
       <Bienvenida />
+      
     </div>
   );
 }

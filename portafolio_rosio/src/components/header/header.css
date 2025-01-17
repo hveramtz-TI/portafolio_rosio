@@ -1,0 +1,27 @@
+.navbar {
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+}
+
+.contenedor-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+@media (max-width: 900px) {
+  .navbar-collapse {
+    background-color: #343a40;
+  }
+}
