@@ -1,17 +1,17 @@
-.presentacion2 {
-    position: relative; /* Necesario para el uso de ::before */
-    display: flex;
-    justify-content:center;
-    align-items:flex-start;
-    flex-direction: column;
+.presentacion_general {
     height: 100vh;
-    background-image: url('/img/glaciar_grey_cerca.webp'); /* Ruta a tu imagen */
+    width: 100%;
+    background-image: url('/img/glaciar_grey_cerca.webp');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -100px;
 }
 
-.presentacion2::before {
+.presentacion_general::after {
     content: '';
     position: absolute;
     top: 0;
@@ -20,4 +20,9 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); /* Filtro oscuro */
     z-index: 1; /* Asegura que el filtro esté sobre la imagen de fondo */
+}
+
+.presentacion_general h1{
+    color: aliceblue;
+    z-index: 2;
 }

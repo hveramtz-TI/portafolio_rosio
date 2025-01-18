@@ -7,9 +7,15 @@ import Presentacion from './components/presentacion/presentacion';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Bienvenida />
-      <Presentacion/>
+      <div>
+        <Header />
+      </div>
+      <div className='contenido_inicio'>
+        <Bienvenida />
+      </div>
+      <div className='contenido_general'>
+        <Presentacion/>
+      </div>
     </div>
   );
 }

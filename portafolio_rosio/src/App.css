@@ -1,0 +1,12 @@
+.contenido_general {
+    position: relative; /* Asegura que el div esté posicionado relativamente */
+    z-index: 1; /* Asegura que este div esté sobre el div de Bienvenida */
+    margin: 0%;
+}
+
+.App
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
