@@ -8,7 +8,6 @@ function Bienvenida() {
         <h2 className='nombre'>Rosio Medina</h2>
         <div className='info'>
           <p className='rol'>Ingeniera en Turismo y Hoteleria.</p>
-          <Button className='boton-iniciar'>Iniciar</Button>
         </div>
     </div>
   );
