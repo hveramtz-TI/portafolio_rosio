@@ -1,14 +1,24 @@
+.playwrite-in-unique {
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: 300; /* Ajusta el peso según sea necesario */
+    font-style: normal;
+}
+
+
 .presentacion_general {
     height: 100vh;
-    width: 100%;
-    background-image: url('/img/glaciar_grey_cerca.webp');
+    width: auto;
+    background-image: url('/img/marmol.webp');
     background-size: cover;
     background-position: center;
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: transparent;
+    justify-content: space-between;
+    border: 40px solid rgb(255, 255, 255);
+    border-radius: 2%;
 }
 
 .presentacion_general::after {
@@ -18,6 +28,268 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Filtro oscuro */
+    background-color: rgba(0, 0, 0, 0.6); /* Filtro oscuro */
     z-index: 1; /* Asegura que el filtro esté sobre la imagen de fondo */
+}
+
+.card_presentacion
+{
+    background-color: rgba(255, 255, 255, 0.885) !important;
+    padding: 20px !important;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.4) !important;
+    border: 3px solid rgb(0, 0, 0) !important;
+    border-radius: 10px !important;
+    z-index: 2 !important;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+}
+
+.contenedor_img
+{
+    z-index: 2;
+    width: 35%;
+    margin-left: 10%;
+    height: auto;
+}
+
+.contenedor_card
+{
+    z-index: 2;
+    width: fit-content;
+    margin-right: 10%;
+}
+
+.avatar_presentacion
+{
+    height: auto !important;
+    width: 300px !important;
+}
+.avatar_presentacion:hover
+{
+    transform: scale(1);
+}
+
+.contenedor_card .titulo_presentacion, .descripcion_presentacion
+{
+    font-family: "Playwrite IN", serif;
+}
+
+.titulo_presentacion
+{
+    font-size: 3rem !important;
+}
+
+.descripcion_presentacion
+{
+    font-size: 1.2rem;
+}
+
+.contenedor_card .titulo_presentacion
+{
+    font-size: 2em;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width:1590px) {
+    .contenedor_img
+    {
+        width: 30%;
+        margin-left: 5%;
+    }
+
+    .contenedor_card
+    {
+        width: 70%;
+        height: 60%;
+        margin-right: 5%;
+    }
+
+    .contenedor_card .MuiCard-root
+    {
+        width: fit-content;
+        height: 90%;
+    }
+
+    .contenedor_card .titulo_presentacion
+    {
+        font-size: 2rem !important;
+    }
+
+    .contenedor_card .descripcion_presentacion
+    {
+        font-size: 1rem !important;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .contenedor_img
+    {
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    .contenedor_card
+    {
+        width: 70%;
+        height: 60%;
+        margin-right: 5%;
+    }
+
+    .contenedor_card .titulo_presentacion
+    {
+        font-size: 1rem !important;
+    }
+
+    .contenedor_card .descripcion_presentacion
+    {
+        font-size: 0.9rem !important;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .presentacion_general
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .contenedor_img
+    {
+        width: 50%;
+        margin: 0%;
+    }
+
+    .contenedor_img .avatar_presentacion
+    {
+        width: 200px !important;
+    }
+
+    .contenedor_card
+    {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    .contenedor_card .titulo_presentacion
+    {
+        font-size: 1.8rem !important;
+    }
+
+    .contenedor_card .descripcion_presentacion
+    {
+        font-size: 1rem !important;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .presentacion_general
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .contenedor_img
+    {
+        width: 50%;
+        margin: 0%;
+    }
+
+    .contenedor_img .avatar_presentacion
+    {
+        width: 150px !important;
+    }
+
+    .contenedor_card
+    {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    .contenedor_card .titulo_presentacion
+    {
+        font-size: 1.5rem !important;
+    }
+
+    .contenedor_card .descripcion_presentacion
+    {
+        font-size: 0.8rem !important;
+    }   
+}
+
+@media screen and (max-width: 500px) {
+    .presentacion_general {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .contenedor_img {
+        width: 60%;
+        margin: 0%;
+    }
+
+    .contenedor_img .avatar_presentacion {
+        width: 120px !important;
+    }
+
+    .contenedor_card {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    .contenedor_card .titulo_presentacion {
+        font-size: 1.2rem !important;
+    }
+
+    .contenedor_card .descripcion_presentacion {
+        font-size: 0.7rem !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .presentacion_general {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .contenedor_img {
+        width: 70%;
+        margin: 0%;
+    }
+
+    .contenedor_img .avatar_presentacion {
+        width: 100px !important;
+    }
+
+    .contenedor_card {
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    .contenedor_card .titulo_presentacion {
+        font-size: 1rem !important;
+    }
+
+    .contenedor_card .descripcion_presentacion {
+        font-size: 0.6rem !important;
+    }
 }

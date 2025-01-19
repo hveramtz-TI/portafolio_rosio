@@ -26,12 +26,17 @@
   width: 80% !important;
 }
 
-.mobile-title {
-  font-size: 1rem;
+.MuiTypography-root
+{
+  font-size: 20px !important;
+  cursor: pointer !important;
 }
 
-.desktop-title {
-  font-size: 1.5rem;
+.MuiTypography-root:hover
+{
+  color: #2d9ea4 !important;
+  transition: 0.7s ease-in-out;
+  text-shadow: 10px 10px 2px #000000;
 }
 
 .MuiAvatar-root {

@@ -2,9 +2,11 @@ import './App.css';
 import Header from './components/header/header';
 import Bienvenida from './components/bienvenida/bienvenida';
 import Presentacion from './components/presentacion/presentacion';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 function App() {
+  const videoRef = useRef(null);
+
   useEffect(() => {
     const handleScroll = () => {
       const contenidoInicio = document.querySelector('.contenido_inicio');
@@ -28,12 +30,18 @@ function App() {
 
   return (
     <div className="App">
-        <Header />
+      <Header />
       <div className='contenido_inicio'>
+        <div className='background_video'>
+          <video autoPlay loop muted className="video-background">
+            <source src="/video/greenScreenSnow.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <Bienvenida />
       </div>
       <div className='contenido_general'>
-        <Presentacion/>
+        <Presentacion />
       </div>
     </div>
   );

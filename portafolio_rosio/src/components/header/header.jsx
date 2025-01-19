@@ -39,7 +39,7 @@ function Header() {
                 open={Boolean(anchorEl)}
                 onClose={handleMenuClose}
               >
-                <MenuItem onClick={handleMenuClose} sx={{ fontFamily: 'Playwrite IN, serif' }}>Inicio</MenuItem>
+                <MenuItem onClick={handleMenuClose} sx={{ fontFamily: 'Playwrite IN, serif'}}>Inicio</MenuItem>
                 <MenuItem onClick={handleMenuClose} sx={{ fontFamily: 'Playwrite IN, serif' }}>Sobre mí</MenuItem>
                 <MenuItem onClick={handleMenuClose} sx={{ fontFamily: 'Playwrite IN, serif' }}>Proyectos</MenuItem>
                 <MenuItem onClick={handleMenuClose} sx={{ fontFamily: 'Playwrite IN, serif' }}>Contacto</MenuItem>
@@ -47,10 +47,10 @@ function Header() {
             </>
           ) : (
             <Box sx={{ display: 'flex', gap: 2 }}>
-              <Typography variant="h6" sx={{ fontFamily: 'Playwrite IN, serif' }}>Inicio</Typography>
-              <Typography variant="h6" sx={{ fontFamily: 'Playwrite IN, serif' }}>Sobre mí</Typography>
-              <Typography variant="h6" sx={{ fontFamily: 'Playwrite IN, serif' }}>Proyectos</Typography>
-              <Typography variant="h6" sx={{ fontFamily: 'Playwrite IN, serif' }}>Contacto</Typography>
+              <Typography  sx={{ fontFamily: 'Playwrite IN, serif' }}>Inicio</Typography>
+              <Typography  sx={{ fontFamily: 'Playwrite IN, serif' }}>Sobre mí</Typography>
+              <Typography  sx={{ fontFamily: 'Playwrite IN, serif' }}>Proyectos</Typography>
+              <Typography sx={{ fontFamily: 'Playwrite IN, serif' }}>Contacto</Typography>
             </Box>
           )}
         </Toolbar>
