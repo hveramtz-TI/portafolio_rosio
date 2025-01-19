@@ -35,7 +35,6 @@ function App() {
         <div className='background_video'>
           <video autoPlay loop muted className="video-background">
             <source src="/video/greenScreenSnow.webm" type="video/webm" />
-            Your browser does not support the video tag.
           </video>
         </div>
         <Bienvenida />
