@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
 }
 
 .presentacion_general::after {
@@ -19,9 +20,4 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); /* Filtro oscuro */
     z-index: 1; /* Asegura que el filtro esté sobre la imagen de fondo */
-}
-
-.presentacion_general h1{
-    color: aliceblue;
-    z-index: 2;
 }

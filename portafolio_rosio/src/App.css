@@ -3,10 +3,13 @@
     z-index: 1; /* Asegura que este div esté sobre el div de Bienvenida */
     margin: 0%;
     transition: transform 0.5s ease, opacity 0.5s ease; /* Transición para el movimiento y la opacidad */
+    border: 50px solid #ababab84; /* Agrega un borde superior de 20px de color verde */
+    border-radius: 1%;
+    background-color: white;
 }
 
 .contenido_general.scrolled {
-    transform: translateY(-50vh); /* Ajusta este valor según sea necesario */
+    transform: translateY(-70vh); /* Ajusta este valor según sea necesario */
     opacity: 1;
 }
 
@@ -26,9 +29,23 @@
     background-color: rgb(67, 67, 67);
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+
+@media screen and (max-width: 600px) {
+    .nombre {
+        font-size: 2rem;
+    }
+
+    .rol {
+        font-size: 1.5rem;
+    }
+
+    .boton-iniciar {
+        font-size: 1rem;
+    }
+
+    .contenido_general.scrolled
+    {
+        transform: translateY(-70vh);
+    }
+    
 }

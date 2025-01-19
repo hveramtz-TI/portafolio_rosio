@@ -1,6 +1,5 @@
 import React from 'react';
 import './bienvenida.css'; // Importa el archivo CSS
-import Button from 'react-bootstrap/Button';
 
 function Bienvenida() {
   return (

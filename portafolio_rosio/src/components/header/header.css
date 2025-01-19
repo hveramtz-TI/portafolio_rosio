@@ -1,27 +1,46 @@
-.navbar {
-  z-index: 1000;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 8vh;
+.playwrite-in-unique {
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 300; /* Ajusta el peso según sea necesario */
+  font-style: normal;
 }
 
-.contenedor-navbar {
+.header {
+  width: 100%;
+  height:auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  margin-top: 30px;
 }
 
-.navbar-collapse {
-  display: flex;
-  justify-content: center;
-  margin-right: 100px;
+.MuiAppBar-root {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: white !important;
+  font-size: 1.5rem !important;
+  border: 2px solid white !important;
+  border-radius: 10px !important;
+  width: 80% !important;
 }
 
-@media (max-width: 900px) {
-  .navbar-collapse {
-    background-color: #343a40;
-  }
+.mobile-title {
+  font-size: 1rem;
+}
+
+.desktop-title {
+  font-size: 1.5rem;
+}
+
+.MuiAvatar-root {
+  width: 50px !important;
+  height: 50px !important;
+  transition: transform 0.3s ease-in-out;
+}
+
+.MuiAvatar-root:hover
+{
+  transform: scale(1.2);
 }
