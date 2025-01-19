@@ -33,7 +33,7 @@ function App() {
       <Header />
       <div className='contenido_inicio'>
         <div className='background_video'>
-          <video autoPlay loop muted className="video-background">
+          <video autoPlay loop muted playsInline className="video-background">
             <source src="/video/greenScreenSnow.webm" type="video/webm" />
           </video>
         </div>
