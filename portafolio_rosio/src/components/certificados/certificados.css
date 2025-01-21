@@ -1,0 +1,87 @@
+.playwrite-in-unique {
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: 300; /* Ajusta el peso según sea necesario */
+    font-style: normal;
+  }
+  
+
+.certificados
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    border: 40px solid rgb(255, 255, 255);
+    border-radius: 2%;
+    background-image: url('img/coralAustralia.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.certificados::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
+}
+
+.certificados h2
+{
+    z-index: 2;
+    font-family: 'Playwrite IN', serif;
+    color: white;
+}
+
+
+.contenedor_certificados
+{
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.certificados .MuiCard-root
+{
+    margin: 10px; 
+    width: 500px;
+    height: 43vh;
+    background-color: rgb(255, 255, 255, 0.885) !important;
+    border-radius: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.certificados .MuiButtonBase-root
+{
+    height: 100%;
+}
+
+.certificados .MuiCardMedia-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34vh;
+}
+
+.certificados .MuiCardMedia-root img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}

@@ -16,7 +16,7 @@
   margin-top: 30px;
 }
 
-.MuiAppBar-root {
+.header .MuiAppBar-root {
   background-color: transparent !important;
   box-shadow: none !important;
   color: white !important;
@@ -26,26 +26,26 @@
   width: 80% !important;
 }
 
-.MuiTypography-root
+.header .MuiTypography-root
 {
   font-size: 20px !important;
   cursor: pointer !important;
 }
 
-.MuiTypography-root:hover
+.header .MuiTypography-root:hover
 {
   color: #2d9ea4 !important;
   transition: 0.7s ease-in-out;
   text-shadow: 10px 10px 2px #000000;
 }
 
-.MuiAvatar-root {
+.header .MuiAvatar-root {
   width: 50px !important;
   height: 50px !important;
   transition: transform 0.3s ease-in-out;
 }
 
-.MuiAvatar-root:hover
+.header .MuiAvatar-root:hover
 {
   transform: scale(1.2);
 }

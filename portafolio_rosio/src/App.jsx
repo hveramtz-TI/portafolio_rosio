@@ -3,6 +3,7 @@ import Header from './components/header/header';
 import Bienvenida from './components/bienvenida/bienvenida';
 import Presentacion from './components/presentacion/presentacion';
 import { useEffect, useRef } from 'react';
+import Certificados from './components/certificados/certificados';
 
 function App() {
   const videoRef = useRef(null);
@@ -41,6 +42,7 @@ function App() {
       </div>
       <div className='contenido_general'>
         <Presentacion />
+        <Certificados />
       </div>
     </div>
   );

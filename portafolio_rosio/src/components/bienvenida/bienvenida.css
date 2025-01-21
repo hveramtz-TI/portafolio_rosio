@@ -1,4 +1,4 @@
-.playwrite-in-unique {
+.presentacion .playwrite-in-unique {
     font-family: "Playwrite IN", serif;
     font-optical-sizing: auto;
     font-weight: 300; /* Ajusta el peso según sea necesario */
@@ -18,8 +18,7 @@
     background-repeat: no-repeat;
 }
 
-.contenido-presentacion
-{
+.presentacion .contenido-presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,8 +38,7 @@
     z-index: 1; /* Asegura que el filtro esté sobre la imagen de fondo */
 }
 
-
-.nombre, .rol {
+.presentacion .nombre, .presentacion .rol {
     position: relative; /* Necesario para estar por encima del filtro oscuro */
     z-index: 2; /* Asegura que el texto esté sobre el filtro oscuro */
     padding: 1vh 30vh;
@@ -48,14 +46,13 @@
     font-family: "Playwrite IN", serif;
 }
 
-.nombre:hover, .rol:hover {
+.presentacion .nombre:hover, .presentacion .rol:hover {
     color: #2d9ea4; /* Cambia el color del texto al pasar el mouse */
     transition: 0.7s ease-in-out; /* Transición para el color del texto */
     text-shadow: 10px 10px 2px #000000; /* Sombra del texto */
 }
 
-
-.MuiChip-root {
+.presentacion .MuiChip-root {
     background-color: white !important; /* Fondo del chip */
     color: black; /* Color del texto del chip */
     font-family: "Playwrite IN", serif;
@@ -65,38 +62,34 @@
     padding: 20px !important;
 }
 
-.MuiChip-root .MuiChip-icon
-{
+.presentacion .MuiChip-root .MuiChip-icon {
     margin: 0% !important;
     color: black !important;
 }
 
-.MuiChip-root:hover {
+.presentacion .MuiChip-root:hover {
     background-color: #2d9ea4 !important; /* Cambia el color de fondo al pasar el mouse */
     transition: 0.7s ease-in-out; /* Transición para el color del texto */
     box-shadow: 10px 10px 2px #000000; /* Sombra del chip */
 }
 
-.MuiChip-root:hover .MuiChip-icon {
+.presentacion .MuiChip-root:hover .MuiChip-icon {
     color: white !important; /* Cambia el color del icono al pasar el mouse */
     transition: 0.7 ease-in-out; /* Transición para el color del icono */
 }
 
-
-.MuiChip-root .MuiChip-label {
+.presentacion .MuiChip-root .MuiChip-label {
     display: none !important;
 }
 
-.info
-{
+.presentacion .info {
     align-items: center;
     display: flex;
     width: 100%;
     z-index: 2; /* Asegura que el texto esté sobre el filtro oscuro */
 }
 
-.boton-iniciar
-{
+.presentacion .boton-iniciar {
     position: relative;
     z-index: 2 !important; /* Asegura que el botón esté sobre el filtro oscuro */
     width: 10%;
@@ -107,68 +100,60 @@
     color: black;
 }
 
-.boton-iniciar:hover
-{
+.presentacion .boton-iniciar:hover {
     background-color: #5da42d;
     border-color: black;
 }
 
-.boton-iniciar:active
-{
+.presentacion .boton-iniciar:active {
     background-color: #94ff4d !important;
     border-color: black !important;
 }
 
-
-.nombre {
-
+.presentacion .nombre {
     color: #ffffff; /* Cambia el color del texto a blanco para mejor contraste */
     transition: color 0.5s ease-in-out; /* Transición para el color del texto */
     font-size: 6.5rem; /* Tamaño de fuente por defecto */
 }
 
-.rol {
+.presentacion .rol {
     font-size: 2rem;
     color: #ffffff; /* Cambia el color del texto a blanco para mejor contraste */
     transition: color 0.5s ease-in-out; /* Transición para el color del texto */
 }
 
 @media screen and (max-width: 1200px) {
-    .nombre {
+    .presentacion .nombre {
         font-size: 3.5rem; /* Ajusta el tamaño de fuente para pantallas medianas */
     }
-    .rol {
+    .presentacion .rol {
         font-size: 1.8rem; /* Ajusta el tamaño de fuente para pantallas medianas */
     }
 
-    .boton-iniciar
-    {
+    .presentacion .boton-iniciar {
         width: 10%;
         height: 50px;
         margin: 0 15vh;
     }
-    .nombre, .rol {
+    .presentacion .nombre, .presentacion .rol {
         padding: 1rem 7rem;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .nombre, .rol {
+    .presentacion .nombre, .presentacion .rol {
         padding: 1rem 2rem;
         font-size: 2rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
     }
-    .presentacion
-    {
+    .presentacion {
         align-items: center;
     }
-    .info
-    {
+    .presentacion .info {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .boton-iniciar
-    {
+    .presentacion .boton-iniciar {
         width: 20%;
         height: 50px;
         margin: 0 10vh;
@@ -176,24 +161,21 @@
 }
 
 @media screen and (max-width: 600px) {
-    .presentacion
-    {
+    .presentacion {
         align-items: center;
     }
-    .nombre {
+    .presentacion .nombre {
         font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas muy pequeñas */
     }
-    .rol {
+    .presentacion .rol {
         font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas muy pequeñas */
     }
-    .info
-    {
+    .presentacion .info {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .boton-iniciar
-    {
+    .presentacion .boton-iniciar {
         width: 50%;
         height: 50px;
     }
