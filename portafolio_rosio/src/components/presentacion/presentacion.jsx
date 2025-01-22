@@ -13,7 +13,7 @@ function Presentacion() {
       <div className='contenedor_card'>
         <Card className='card_presentacion'>
           <CardContent>
-            <h1 className='titulo_presentacion' >¡Hola! Soy Rosio</h1>
+            <h1 className='titulo_presentacion' >¡Hola!, Soy Rosio.</h1>
             <p className='descripcion_presentacion'>Soy una persona aficionada de la hotelería, la administración,
               gestión/organización de eventos y el orden organizacional. Por
               lo mismo, luego de prácticas laborales he encontrado mi primer

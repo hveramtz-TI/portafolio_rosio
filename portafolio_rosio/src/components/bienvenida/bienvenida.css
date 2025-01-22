@@ -48,7 +48,7 @@
 
 .presentacion .nombre:hover, .presentacion .rol:hover {
     color: #2d9ea4; /* Cambia el color del texto al pasar el mouse */
-    transition: 0.7s ease-in-out; /* Transición para el color del texto */
+    transition: 0.3s ease-in-out; /* Transición para el color del texto */
     text-shadow: 10px 10px 2px #000000; /* Sombra del texto */
 }
 
@@ -69,13 +69,13 @@
 
 .presentacion .MuiChip-root:hover {
     background-color: #2d9ea4 !important; /* Cambia el color de fondo al pasar el mouse */
-    transition: 0.7s ease-in-out; /* Transición para el color del texto */
+    transition: 0.3s ease-in-out; /* Transición para el color del texto */
     box-shadow: 10px 10px 2px #000000; /* Sombra del chip */
 }
 
 .presentacion .MuiChip-root:hover .MuiChip-icon {
     color: white !important; /* Cambia el color del icono al pasar el mouse */
-    transition: 0.7 ease-in-out; /* Transición para el color del icono */
+    transition: 0.3s ease-in-out; /* Transición para el color del icono */
 }
 
 .presentacion .MuiChip-root .MuiChip-label {
@@ -112,14 +112,12 @@
 
 .presentacion .nombre {
     color: #ffffff; /* Cambia el color del texto a blanco para mejor contraste */
-    transition: color 0.5s ease-in-out; /* Transición para el color del texto */
     font-size: 6.5rem; /* Tamaño de fuente por defecto */
 }
 
 .presentacion .rol {
     font-size: 2rem;
     color: #ffffff; /* Cambia el color del texto a blanco para mejor contraste */
-    transition: color 0.5s ease-in-out; /* Transición para el color del texto */
 }
 
 @media screen and (max-width: 1200px) {

@@ -44,6 +44,11 @@
     color: white;
 }
 
+.certificados .MuiTypography-root{
+    font-family: 'Playwrite IN', serif;
+    color: rgb(0, 0, 0);
+}
+
 
 .contenedor_certificados
 {
@@ -64,7 +69,13 @@
     height: 43vh;
     background-color: rgb(255, 255, 255, 0.885) !important;
     border-radius: 2%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 1s, box-shadow 1s;
+}
+
+.certificados .MuiCard-root:hover
+{
+    transform: scale(1.05) ;
+    box-shadow: 0px 0px 20px 15px rgba(101, 181, 136, 0.6);
 }
 
 .certificados .MuiButtonBase-root
@@ -76,12 +87,77 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 34vh;
+    height: 20rem;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 2%;
+    margin: 0px auto;
 }
 
 .certificados .MuiCardMedia-root img {
-    height: auto;
-    width: auto;
-    max-height: 100%;
-    max-width: 100%;
+    height: auto !important;
+    width: auto !important;
+}
+
+
+@media screen and (max-width: 1700px)
+{
+    .contenedor_certificados .MuiCard-root
+    {
+        max-width: 400px;
+        height: 300px;
+    }
+    .certificados .MuiCardMedia-root {
+        height:12rem;
+    }
+    
+}
+
+@media screen and (max-width: 980px)
+{
+    .contenedor_certificados
+    {
+        flex-direction: column;
+    }
+    .contenedor_certificados .MuiCard-root
+    {
+        max-width: auto;
+        height: 200px;
+    }
+    .certificados .MuiCardMedia-root {
+        height:5rem;
+    }
+    
+}
+
+@media screen and (max-width: 600px)
+{
+    .certificados .MuiCardMedia-root {
+        height: 4rem;
+    }
+    .contenedor_certificados .MuiCard-root
+    {
+        max-width: 300px;
+        height: 200px;
+    }
+    .certificados .MuiCard-root .MuiCardContent-root .MuiTypography-root
+    {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .certificados .MuiCardMedia-root {
+        height: 10vh;
+    }
+    .contenedor_certificados .MuiCard-root
+    {
+        max-width: 250px;
+        height: 200px;
+    }
+    .certificados .MuiCard-root .MuiCardContent-root .MuiTypography-root
+    {
+        font-size: 1rem;
+    }
 }

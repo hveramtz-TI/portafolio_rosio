@@ -30,12 +30,12 @@
 {
   font-size: 20px !important;
   cursor: pointer !important;
+  transition: 0.3s ease-in-out;
 }
 
 .header .MuiTypography-root:hover
 {
   color: #2d9ea4 !important;
-  transition: 0.7s ease-in-out;
   text-shadow: 10px 10px 2px #000000;
 }
 
