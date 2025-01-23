@@ -68,11 +68,11 @@
 
 .certificados .MuiCard-root
 {
-    margin: 10px; 
-    width: 500px;
-    height: 43vh;
+    margin: 10px !important; 
+    width: 500px !important;
+    height: 43vh !important;
     background-color: rgb(255, 255, 255, 0.885) !important;
-    border-radius: 2%;
+    border-radius: 2% !important;
     transition: transform 1s, box-shadow 1s;
 }
 
@@ -88,19 +88,14 @@
 }
 
 .certificados .MuiCardMedia-root {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20rem;
-    width: 90%;
-    border: 2px solid black;
-    border-radius: 2%;
-    margin: 0px auto;
-}
-
-.certificados .MuiCardMedia-root img {
-    height: auto !important;
-    width: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 28vh !important;
+    width: 90% !important;
+    border: 2px solid black !important;
+    border-radius: 2% !important;
+    margin: 0px auto !important;
 }
 
 
