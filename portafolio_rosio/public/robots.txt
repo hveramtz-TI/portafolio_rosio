@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+# No se especifica un sitemap ya que no hay un dominio específico

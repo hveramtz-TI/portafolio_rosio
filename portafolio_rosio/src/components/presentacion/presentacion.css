@@ -102,6 +102,13 @@
         margin-left: 5%;
     }
 
+    .contenedor_card .MuiCardContent-root
+    {
+        height: 100%;
+        overflow-y: auto;
+        padding: 0%;
+    }
+
     .contenedor_card
     {
         width: 70%;
@@ -119,12 +126,10 @@
     {
         font-size: 2rem !important;
     }
-
     .contenedor_card .descripcion_presentacion
     {
-        font-size: 1rem !important;
+        font-size:larger !important;
     }
-    
 }
 
 @media screen and (max-width: 1000px) {
@@ -187,7 +192,7 @@
 
     .contenedor_card .descripcion_presentacion
     {
-        font-size: 1rem !important;
+        font-size:1.1rem !important;
     }
     
 }
@@ -226,7 +231,7 @@
 
     .contenedor_card .descripcion_presentacion
     {
-        font-size: 0.8rem !important;
+        font-size: 1.1rem !important;
     }   
 }
 
@@ -254,11 +259,12 @@
     }
 
     .contenedor_card .titulo_presentacion {
-        font-size: 1.2rem !important;
+        font-size:large !important;
     }
 
     .contenedor_card .descripcion_presentacion {
-        font-size: 0.7rem !important;
+        font-size: me !important;
+        height: 50vh !important;
     }
 }
 
@@ -290,6 +296,6 @@
     }
 
     .contenedor_card .descripcion_presentacion {
-        font-size: 0.6rem !important;
+        font-size: 0.9rem !important;
     }
 }

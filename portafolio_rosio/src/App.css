@@ -62,6 +62,6 @@
     }
 
     .contenido_general.scrolled {
-        transform: translateY(-70vh);
+        transform: translateY(-40vh);
     }
 }

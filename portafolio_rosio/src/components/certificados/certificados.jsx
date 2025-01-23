@@ -24,7 +24,7 @@ function Certificados() {
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    Certificado Transformacion Digital
+                    Certificado Transformacion Digital.
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                     Impartido por Santander.
@@ -42,7 +42,7 @@ function Certificados() {
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    Certificado Marketing Digital
+                    Certificado Grado Academico.
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                     Impartido por UNAB.
@@ -60,7 +60,7 @@ function Certificados() {
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    Certificado Clientes Dificiles
+                    Certificado Clientes Dificiles.
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                     Impartido por la Universidad de los Andes.
