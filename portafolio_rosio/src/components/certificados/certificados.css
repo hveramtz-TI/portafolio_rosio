@@ -145,12 +145,12 @@
 @media screen and (max-width: 600px)
 {
     .certificados .MuiCardMedia-root {
-        height: 5rem;
+        height: 5rem !important;
     }
     .contenedor_certificados .MuiCard-root
     {
-        max-width: 300px;
-        height: 200px;
+        max-width: 300px !important;
+        height: 200px !important;
     }
 
     .certificados .MuiCard-root .MuiCardMedia-root
@@ -171,12 +171,12 @@
 @media screen and (max-width: 400px)
 {
     .certificados .MuiCardMedia-root {
-        height: 10vh;
+        height: 10vh !important;
     }
     .contenedor_certificados .MuiCard-root
     {
-        max-width: 250px;
-        height: 150px;
+        max-width: 250px !important;
+        height: 200px !important;
     }
     .certificados .MuiCard-root .MuiCardContent-root .MuiTypography-root
     {
@@ -184,15 +184,19 @@
     }
 }
 
-@media screen and (max-width: 400px) and (max-height: 1000px) {
-    .contenedor_certificados .MuiCard-root {
-        max-width: auto;
-        height: 170px;
-    }
+@media screen and (max-width: 400px) and (max-height: 700px)
+{
     .certificados .MuiCardMedia-root {
-        height: 4rem;
+        height: 8vh !important;
     }
-    .certificados .MuiCard-root .MuiCardContent-root .MuiTypography-root {
-        font-size: 0.8rem;
+    .contenedor_certificados .MuiCard-root
+    {
+        max-width: 200px !important;
+        height: 150px !important;
     }
+    .certificados .MuiCard-root .MuiCardContent-root .MuiTypography-root
+    {
+        font-size: 0.6rem;
+    }
+    
 }
