@@ -18,7 +18,7 @@
     background-color: rgb(255, 255, 255);
     border: 40px solid rgb(255, 255, 255);
     border-radius: 2%;
-    background-image: url('img/coralAustralia.webp');
+    background-image: url('/img/coralAustralia.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
