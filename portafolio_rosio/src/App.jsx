@@ -4,6 +4,7 @@ import Bienvenida from './components/bienvenida/bienvenida';
 import Presentacion from './components/presentacion/presentacion';
 import { useEffect, useRef } from 'react';
 import Certificados from './components/certificados/certificados';
+import Experencia from './components/experiencia/experiencia';
 
 function App() {
   const videoRef = useRef(null);
@@ -43,6 +44,7 @@ function App() {
       <div className='contenido_general'>
         <Presentacion />
         <Certificados />
+        <Experencia />
       </div>
     </div>
   );

@@ -1,21 +1,30 @@
-import React from 'react'
-import CertificadoSantander from '/img/certificadoSantander.png'
-import CertificadoUnab from '/img/certificadoUnab.png'
-import CertificadoClientes from '/img/certificadosClientesDificiles.png'
+import React from 'react';
+import CertificadoSantander from '/img/certificadoSantander.png';
+import CertificadoUnab from '/img/certificadoUnab.png';
+import CertificadoClientes from '/img/certificadosClientesDificiles.png';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
-import './certificados.css'
+import './certificados.css';
 
 function Certificados() {
+  const handleDownload = (url) => {
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = url.split('/').pop();
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className='certificados'>
         <h2>Certificados</h2>
         <div className='contenedor_certificados'>
         <Card sx={{ width:'70%' }}>
-            <CardActionArea>
+            <CardActionArea onClick={() => handleDownload('/pdf/certificadoSantanderRosio.pdf')}>
                 <CardMedia
                 component="img"
                 height="140"
@@ -33,7 +42,7 @@ function Certificados() {
             </CardActionArea>
         </Card>
         <Card sx={{ width:'70%' }}>
-            <CardActionArea>
+            <CardActionArea onClick={() => handleDownload('/pdf/certificadoUnabRosio.pdf')}>
                 <CardMedia
                 component="img"
                 height="140"
@@ -51,7 +60,7 @@ function Certificados() {
             </CardActionArea>
         </Card>
         <Card sx={{ width: '70%' }}>
-            <CardActionArea>
+            <CardActionArea onClick={() => handleDownload('/pdf/certificadoLesHallesRosio.pdf')}>
                 <CardMedia
                 component="img"
                 height="140"
@@ -70,7 +79,7 @@ function Certificados() {
         </Card>
         </div>
     </div>
-  )
+  );
 }
 
-export default Certificados
+export default Certificados;

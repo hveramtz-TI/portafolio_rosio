@@ -24,6 +24,14 @@ function Header() {
     setAnchorEl(null);
   };
 
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    handleMenuClose();
+  };
+
   return (
     <div className='header'>
       <AppBar position="relative" color="primary">
@@ -39,18 +47,18 @@ function Header() {
                 open={Boolean(anchorEl)}
                 onClose={handleMenuClose}
               >
-                <MenuItem onClick={handleMenuClose} sx={{ fontFamily: 'Playwrite IN, serif'}}>Inicio</MenuItem>
-                <MenuItem onClick={handleMenuClose} sx={{ fontFamily: 'Playwrite IN, serif' }}>Sobre mí</MenuItem>
-                <MenuItem onClick={handleMenuClose} sx={{ fontFamily: 'Playwrite IN, serif' }}>Proyectos</MenuItem>
-                <MenuItem onClick={handleMenuClose} sx={{ fontFamily: 'Playwrite IN, serif' }}>Contacto</MenuItem>
+                <MenuItem onClick={() => handleScroll('inicio')} sx={{ fontFamily: 'Playwrite IN, serif'}}>Inicio</MenuItem>
+                <MenuItem onClick={() => handleScroll('sobre-mi')} sx={{ fontFamily: 'Playwrite IN, serif' }}>Sobre mí</MenuItem>
+                <MenuItem onClick={() => handleScroll('proyectos')} sx={{ fontFamily: 'Playwrite IN, serif' }}>Experiencia</MenuItem>
+                <MenuItem onClick={() => handleScroll('contacto')} sx={{ fontFamily: 'Playwrite IN, serif' }}>Certificado</MenuItem>
               </Menu>
             </>
           ) : (
             <Box sx={{ display: 'flex', gap: 2 }}>
-              <Typography  sx={{ fontFamily: 'Playwrite IN, serif' }}>Inicio</Typography>
-              <Typography  sx={{ fontFamily: 'Playwrite IN, serif' }}>Sobre mí</Typography>
-              <Typography  sx={{ fontFamily: 'Playwrite IN, serif' }}>Proyectos</Typography>
-              <Typography sx={{ fontFamily: 'Playwrite IN, serif' }}>Contacto</Typography>
+              <Typography onClick={() => handleScroll('inicio')} sx={{ fontFamily: 'Playwrite IN, serif', cursor: 'pointer' }}>Inicio</Typography>
+              <Typography onClick={() => handleScroll('sobre-mi')} sx={{ fontFamily: 'Playwrite IN, serif', cursor: 'pointer' }}>Sobre mí</Typography>
+              <Typography onClick={() => handleScroll('proyectos')} sx={{ fontFamily: 'Playwrite IN, serif', cursor: 'pointer' }}>Experiencia</Typography>
+              <Typography onClick={() => handleScroll('contacto')} sx={{ fontFamily: 'Playwrite IN, serif', cursor: 'pointer' }}>Certificados</Typography>
             </Box>
           )}
         </Toolbar>
