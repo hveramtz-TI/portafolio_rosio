@@ -48,17 +48,17 @@ function Header() {
                 onClose={handleMenuClose}
               >
                 <MenuItem onClick={() => handleScroll('inicio')} sx={{ fontFamily: 'Playwrite IN, serif'}}>Inicio</MenuItem>
-                <MenuItem onClick={() => handleScroll('sobre-mi')} sx={{ fontFamily: 'Playwrite IN, serif' }}>Sobre mí</MenuItem>
-                <MenuItem onClick={() => handleScroll('proyectos')} sx={{ fontFamily: 'Playwrite IN, serif' }}>Experiencia</MenuItem>
-                <MenuItem onClick={() => handleScroll('contacto')} sx={{ fontFamily: 'Playwrite IN, serif' }}>Certificado</MenuItem>
+                <MenuItem onClick={() => handleScroll('sobre_mi')} sx={{ fontFamily: 'Playwrite IN, serif' }}>Sobre mí</MenuItem>
+                <MenuItem onClick={() => handleScroll('experiencia')} sx={{ fontFamily: 'Playwrite IN, serif' }}>Experiencia</MenuItem>
+                <MenuItem onClick={() => handleScroll('certificados')} sx={{ fontFamily: 'Playwrite IN, serif' }}>Certificado</MenuItem>
               </Menu>
             </>
           ) : (
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Typography onClick={() => handleScroll('inicio')} sx={{ fontFamily: 'Playwrite IN, serif', cursor: 'pointer' }}>Inicio</Typography>
-              <Typography onClick={() => handleScroll('sobre-mi')} sx={{ fontFamily: 'Playwrite IN, serif', cursor: 'pointer' }}>Sobre mí</Typography>
-              <Typography onClick={() => handleScroll('proyectos')} sx={{ fontFamily: 'Playwrite IN, serif', cursor: 'pointer' }}>Experiencia</Typography>
-              <Typography onClick={() => handleScroll('contacto')} sx={{ fontFamily: 'Playwrite IN, serif', cursor: 'pointer' }}>Certificados</Typography>
+              <Typography onClick={() => handleScroll('sobre_mi')} sx={{ fontFamily: 'Playwrite IN, serif', cursor: 'pointer' }}>Sobre mí</Typography>
+              <Typography onClick={() => handleScroll('experiencia')} sx={{ fontFamily: 'Playwrite IN, serif', cursor: 'pointer' }}>Experiencia</Typography>
+              <Typography onClick={() => handleScroll('certificados')} sx={{ fontFamily: 'Playwrite IN, serif', cursor: 'pointer' }}>Certificados</Typography>
             </Box>
           )}
         </Toolbar>

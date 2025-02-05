@@ -5,6 +5,7 @@ import Presentacion from './components/presentacion/presentacion';
 import { useEffect, useRef } from 'react';
 import Certificados from './components/certificados/certificados';
 import Experencia from './components/experiencia/experiencia';
+import Footer from './components/footer/footer';
 
 function App() {
   const videoRef = useRef(null);
@@ -39,12 +40,21 @@ function App() {
             <source src="/video/greenScreenSnow.webm" type="video/webm" />
           </video>
         </div>
-        <Bienvenida />
+        <div id='inicio'>
+          <Bienvenida />
+        </div>
       </div>
       <div className='contenido_general'>
-        <Presentacion />
-        <Certificados />
-        <Experencia />
+        <div id='sobre_mi'>
+          <Presentacion />
+        </div>
+        <div id='experiencia'>
+          <Experencia />
+        </div>
+        <div id='certificados'>
+          <Certificados />
+          <Footer />
+        </div>
       </div>
     </div>
   );

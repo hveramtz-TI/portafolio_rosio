@@ -19,7 +19,7 @@ function Bienvenida() {
   };
 
   const handleEmailClick = () => {
-    navigator.clipboard.writeText('rosio.medina@example.com');
+    navigator.clipboard.writeText('rossiimedgonza@gmail.com');
     setOpen(true);
   };
 
